@@ -1,0 +1,96 @@
+
+<div style="margin-top: 3%;" class="container">
+  
+    <h1>Shopping Cart</h1>
+    
+  
+
+  <% if(session.cart) { %>
+    <div class="cart">
+
+      <div class="products">
+        <% for(let product1 of Object.values(session.cart.items)) { %>
+          <div class="product">
+
+            <img src="/static/img/<%= product1.item.image%>">
+
+            <div class="product-info">
+
+              <h3 class="product-name">
+                <%= product1.item.name%>
+              </h3>
+
+              <h4 class="product-price">₹ <%= product1.item.price%>
+              </h4>
+
+              <h4 class="product-offer">50%</h4>
+
+              <!-- <p class="product-quantity">Qnt : <%= product1.qty%> </p> -->
+              <p class="product-quantity">Qnt: <input value="<%= product1.qty%>" name=""> </p>
+
+
+            </div>
+
+
+          </div>
+
+          <% } %>
+      </div>
+
+      <div class="cart-total">
+
+        <p>
+
+          <span>Total Price</span>
+
+          <span>₹ <%= session.cart.totalPrice%></span>
+
+        </p>
+
+        <p>
+
+          <span>Number of Items</span>
+
+          <span>
+            <%= session.cart.totalQty%>
+          </span>
+
+        </p>
+
+        <p>
+
+          <span>You Save</span>
+
+          <span>₹ 1,000</span>
+
+        </p>
+        <% if(user) { %>
+          <form action="/orders" method="POST">
+            <input name="address" style="width: 100%;
+          margin-bottom: 14px; border: 2px solid lightgrey; border-radius: 4px;" type="text" placeholder="Address">
+            <button type="submit" href="">Order Now</button>
+          </form>
+
+          <% } else { %>
+
+            <a type="submit" href="/login">Login To Order</a>
+            <% } %>
+
+      </div>
+      <a href="/remove">
+
+        <p class="product-remove">
+  
+          <i class="fa fa-trash" aria-hidden="true"></i>
+  
+          <span class="remove">Remove</span>
+  
+        </p>
+      </a>
+
+    </div>
+
+    <% } else { %>
+      <h1 class="text-3xl font-bold mb-2">Cart Empty 😕</h1>
+      <% } %>
+</div>

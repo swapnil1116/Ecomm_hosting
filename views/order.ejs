@@ -1,0 +1,46 @@
+<div class="table-box">
+    <p style="text-align: center;color:darkblue;font-size: 50px;font-weight: bold;">All Orders</p>
+    <% if(messages.success) { %>
+        <div id="success_alert">
+            <p style="text-align: center;">
+                <%= messages.success %>
+            </p>
+        </div>
+        <% } %>
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>Order_Id</p>
+                </div>
+                <div class="table-cell">
+                    <p>Address</p>
+                </div>
+                <div class="table-cell last-cell">
+                    <p>Time</p>
+                </div>
+            </div>
+
+            <% if(orders.length) { %>
+                <% orders.forEach((order)=>{ %>
+                    <div class="table-row">
+                        <div class="table-cell first-cell">
+                            <p>
+                                <%= order._id%>
+                            </p>
+                        </div>
+                        <div class="table-cell">
+                            <p>
+                                <%= order.address%>
+                            </p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p>
+                                <%= moment(order.createdAt).format('hh:mm A')%>
+                            </p>
+                        </div>
+                    </div>
+                    <% }) %>
+
+                        <% } else { %>
+                            <h1> No order found</h1>
+                            <% } %>
+</div>

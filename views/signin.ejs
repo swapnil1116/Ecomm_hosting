@@ -1,0 +1,36 @@
+<div class="login-page">
+  <h1>Register</h1>
+  <form action="/register" method="POST">
+    <% if(messages.error) { %>
+      <span style="color: #ff4100;">
+        <%= messages.error %>
+      </span>
+      <% } %>
+
+        <input type="text" name="name" id="" value="<%= messages.name%>" placeholder="Enter your name">
+        <input type="email" name="email" id="" value="<%= messages.email%>" placeholder="Enter your email">
+        <input type="password" name="password" id="" placeholder="Enter your password">
+        <button style="background-color: #ff4100;" type="submit" class="btn">Login</button>
+        <a href="/login" style="text-decoration: underline; color: #ff4100; cursor: pointer;">Already have account</a>
+        <div class="icons">
+          <div>
+            <i class="fab fa-facebook-square"></i><span>Facebook</span>
+          </div>
+          <div>
+            <i class="fab fa-google"></i><span>Google</span>
+          </div>
+        </div>
+  </form>
+</div>
+<!-- <footer id="footer" class="grid py-5 bg-dark">
+    <div class="container">
+      <div class="container">
+        <address style="color:#f0f5f5;font-family:Times New Roman;Text-Align:center">
+          Website Owner : rckart<sup>©</sup><br>
+          linkedin : <a href="#">Find Us On linkedin</a><br>
+          Twitter : <a href="#">Find Us On Twitter</a><br>
+          Github : <a href="#">Find Us On Github</a><br>
+        </address>
+      </div>
+      <!-- /.container -->
+<!-- </footer>

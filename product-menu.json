@@ -1,0 +1,114 @@
+[{
+  "_id": {
+      "$oid": "60d75f3ee874a5d85b552356"
+  },
+  "name": "Women's Shirt",
+  "image": "product7.jpg",
+  "price": "250"
+},{
+  "_id": {
+      "$oid": "60d75ff7e874a5d85b552359"
+  },
+  "name": "Men's Jacket",
+  "image": "product8.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d7601ae874a5d85b55235a"
+  },
+  "name": "Men's t-shirt",
+  "image": "product2.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d760cde874a5d85b55235f"
+  },
+  "name": "Women's shirt",
+  "image": "product13.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d760e9e874a5d85b552360"
+  },
+  "name": "WashingMachine",
+  "image": "product11.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d760f7e874a5d85b552362"
+  },
+  "name": "Spy Camera",
+  "image": "product4.jpg",
+  "price": "500"
+},{
+  "_id": {
+      "$oid": "60d7610de874a5d85b552363"
+  },
+  "name": "Refrigerator",
+  "image": "product10.jpg",
+  "price": "800"
+},{
+  "_id": {
+      "$oid": "60d76120e874a5d85b552364"
+  },
+  "name": "iPhone",
+  "image": "product6.jpg",
+  "price": "900"
+},{
+  "_id": {
+      "$oid": "60d76136e874a5d85b552365"
+  },
+  "name": "Microwave",
+  "image": "product14.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d7614fe874a5d85b552366"
+  },
+  "name": "Air Conditioner",
+  "image": "product15.jpg",
+  "price": "400"
+},{
+  "_id": {
+      "$oid": "60d7615ae874a5d85b552367"
+  },
+  "name": "Makeup Kit",
+  "image": "product16.jpg",
+  "price": "200"
+},{
+  "_id": {
+      "$oid": "60d76164e874a5d85b552368"
+  },
+  "name": "Beauty Product",
+  "image": "product17.jpg",
+  "price": "200"
+},{
+  "_id": {
+      "$oid": "60d7616de874a5d85b552369"
+  },
+  "name": "headphones",
+  "image": "product5.jpg",
+  "price": "600"
+},{
+  "_id": {
+      "$oid": "60d76176e874a5d85b55236a"
+  },
+  "name": "Wrist Watch",
+  "image": "product9.jpg",
+  "price": "600"
+},{
+  "_id": {
+      "$oid": "60d76180e874a5d85b55236b"
+  },
+  "name": "Stylish shoes",
+  "image": "product18.jpg",
+  "price": "300"
+},{
+  "_id": {
+      "$oid": "60d76191e874a5d85b55236c"
+  },
+  "name": "Football",
+  "image": "product70.jpg",
+  "price": "300"
+}
+]

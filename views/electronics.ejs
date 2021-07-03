@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="form-group">
+        <label for="category"><b></b></label>
+        <select onchange="selectCategory()" name="category" id="homePageCategorySelection" class="form-control"
+            id="category">
+            <option>All Categories</option>
+            <option><a href="vehicles.html">Vehicles</a></option>
+            <option><a href="electronics.html">Electronics and home Appliances</a></option>
+            <option><a href="furniture.html">Furnitue,Home And Decoration</a></option>
+            <option><a href="clothing.html">Fashion And Beauty</a></option>
+            <option><a href="books.html">Books Sports And Hobbies</a></option>
+        </select>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+        <hr style="margin-top: 10px;"> -->
+
+
+<div class="container">
+    <div class="row">
+        <% products.forEach(function(products){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="/static/img/<%= products.image %>">
+                            <img class="pic-2" src="/static/img/<%= products.image %>">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                            </li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">
+                                <%= products.name %>
+                            </a></h3>
+                        <div class="price">₹
+                            <%= products.price %>
+                                <!-- <span>$22.00</span> -->
+                        </div>
+                        <a data-product="<%= JSON.stringify(products) %>" class="add-to-cart" >ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</div>
