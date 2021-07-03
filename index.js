@@ -8,6 +8,7 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 const passport = require('passport')
 const moment = require('moment')
+const port = process.env.PORT || 3000;
 
 
 
@@ -330,6 +331,6 @@ app.get('/customer/order',auth, async(req,res)=>{
 })
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server is running at PORT 3000")
 });
